@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.8/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div>
+        <!-- navbar started -->
+        <div class="navbar bg-[#7749F8]">
+            <div class="navbar-start">
+                <a class=" text-xl text-white ml-20">Personal Blogging App</a>
+            </div>
+
+            <div class="navbar-end">
+                <a href="sign-in.html" class=" bg-transparent border-none text-white mr-20">Sign-In</a>
+            </div>
+        </div>
+        <!-- navbar ended -->
+
+
+        <!-- header started -->
+        <div class="header bg-[#fff] p-7">
+            <header class="ml-20 text-4xl font-bold">Sign-Up</header>
+        </div>
+        <!-- header ended -->
+
+        <div class="bg-gray-100 min-h-screen flex items-center justify-center">
+            <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+
+                <form id="reg-form">
+
+                    <div class="mb-4">
+                        <input type="text" id="name" placeholder="Your Name"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 hover:border-gray-300 transition duration-300">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <input type="text" id="email" placeholder="Email"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 hover:border-gray-300 transition duration-300">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" id="password" placeholder="Password"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 hover:border-gray-300 transition duration-300">
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" id="confirmpassword" placeholder="Confirm Password"
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 hover:border-gray-300 transition duration-300">
+                    </div>
+                    <div class="mt-4 bg-[#7749F8] text-white px-3 rounded-md py-2">
+                    <input type="file" id="profile-pic" class="mt-1">
+                    </div>
+
+                    <div id="signup-short" class="mt-4 bg-white text-black px-3 rounded-md py-2">
+                        <p class="para">Already have an account? <a href="./sign-in.html" class="short-link text-[#7749F8]">Sign In</a></p>
+                    </div>
+
+                    <br>
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-[#7749F8] text-white py-2 px-3 rounded-md">Sign-Up</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="register.js"></script>
+</body>
+
+</html>
